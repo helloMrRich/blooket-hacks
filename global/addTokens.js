@@ -35,9 +35,10 @@
                             "content-type": "application/json",
                             "X-Blooket-Build": e.blooketBuild
                         },
+                        
                         body: await encodeValues({
                             name: x.name,
-                            addedTokens: 500,
+                            addedTokens: 9999],
                             addedXp: 300
                         }, e.secret)
                     });
@@ -50,7 +51,7 @@
                         },
                         body: await encodeValues({
                             name: x.name,
-                            addedTokens: 500,
+                            addedTokens: 99999,
                             addedXp: 300
                         }, e.secret)
                     }).then(() => alert('Added daily rewards!')).catch(() => alert('There was an error when adding rewards!'));;
